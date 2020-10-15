@@ -33,7 +33,7 @@ services:
      - db
   db:
     restart: always
-    image: postgres
+    image: postgres:10.3
     volumes:
       - postgres-config:/etc/postgresql
       - postgres-data:/var/lib/postgresql/data
