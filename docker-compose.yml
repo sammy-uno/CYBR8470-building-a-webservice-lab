@@ -36,7 +36,7 @@ services:
     image: postgres:10.3
     volumes:
       - postgres-config:/etc/postgresql
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data2
       - postgres-logs:/var/log/postgresql
       - ./database-backup:/database-backup
 volumes:
