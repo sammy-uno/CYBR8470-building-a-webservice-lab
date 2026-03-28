@@ -99,7 +99,7 @@ jobs:
         category: "/language:${{matrix.language}}"
 
     - name: Upload SARIF file
-    uses: actions/upload-artifact@v4
-    with:
-      name: sarif-results
-      path: ../results/*.sarif  # Adjust path to where CodeQL saves it during the run
+      uses: actions/upload-artifact@v4
+      with:
+        name: sarif-results
+        path: ../results/*.sarif  # Adjust path to where CodeQL saves it during the run
