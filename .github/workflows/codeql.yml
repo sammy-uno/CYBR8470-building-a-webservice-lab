@@ -102,4 +102,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: sarif-results
-        path: ${{ github.workspace }}/results/*.sarif  # Adjust path to where CodeQL saves it during the run
+        path: ${{ github.workspace }}/results/test.sarif  # Adjust path to where CodeQL saves it during the run
